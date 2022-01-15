@@ -2,6 +2,8 @@
 
 Print a dot graph of a nim ast dumped using the `dumpTree` macro.
 
+![example tree](example.jpg)
+
 ---
 
 ## View image
