@@ -1,11 +1,3 @@
-## To view output in fim:
-## astdot | dot -Tjpg | fim -i --autowindow
-## 
-## Force recompile (to reprint macros) and pipe into astdot
-## nim r -f src/example.nim | astdot
-## 
-## With xclip to paste from clipboard:
-## xclip -selection clipboard -o | astdot
 
 # TODO:
 # diffing

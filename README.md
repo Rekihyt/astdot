@@ -1,5 +1,9 @@
 # Astdot
 
+Print a dot graph of a nim ast dumped using the `dumpTree` macro.
+
+---
+
 ## View image
 
 To view output in fim:
