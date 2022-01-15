@@ -2,7 +2,7 @@
 
 version       = "1.0.0"
 author        = "Rekihyt"
-description: "Prints a dot graph of a nim ast dumped using the `dumpTree` macro.",
+description   = "Prints a dot graph of a nim ast dumped using the `dumpTree` macro."
 license       = "MIT"
 binDir        = "bin"
 srcDir        = "src"

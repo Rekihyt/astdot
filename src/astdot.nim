@@ -17,12 +17,14 @@ var parser = ArgumentParser(
   author: "Rekihyt <checkmateguy@gmail.com>"
 )
 
+#[
 parser.addSwitchArgument(
   shortName="-j",
   longName="--jpg",
   default=false,
   help="Output jpg image instead of a dot string."
 )
+]#
 
 
 var
@@ -81,6 +83,7 @@ func matchColor(nodeName: string): string =
       "source"
   colorRules[color]
 
+let _ = parser.parse()
 
 while not stdin.endOfFile():
   line = stdin.readLine()
@@ -118,6 +121,5 @@ while not stdin.endOfFile():
 
   nth += 1
   prevIndentLevel = indentLevel
-
 
 echo graph.exportDot()
