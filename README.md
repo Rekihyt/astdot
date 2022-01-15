@@ -2,9 +2,12 @@
 
 Print a dot graph of a nim ast dumped using the `dumpTree` macro.
 
-Theme is currently hardcoded to colors from <https://github.com/Rekihyt/oak>
 
 ![example tree](example.jpg)
+
+The theme used is currently hardcoded with colors from my syntax theme [oak](https://github.com/Rekihyt/oak).
+
+Note: node names are hardcoded, and many are missing colors.
 
 ---
 
