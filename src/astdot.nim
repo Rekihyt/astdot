@@ -65,7 +65,7 @@ proc countIndents(str: string): int =
 
 func matchColor(nodeName: string): string =
   let color = case split(nodeName)[0]
-    of "StmtList":
+    of "StmtList", "Ident \"*\"": # TODO: Ident "*" not matching
       "modules"
     of "Ty":
       "types"
@@ -75,7 +75,7 @@ func matchColor(nodeName: string): string =
       "variables"
     of "VarSection", "LetSection":
       "keywords"
-    of "ProcDef", "Command":
+    of "ProcDef", "Command", "FuncDef":
       "functions"
     of "Prefix", "Bracket", "BracketExpr":
       "operators"
@@ -112,7 +112,7 @@ while not stdin.endOfFile():
     graph.addEdge(parents[^1] -> 'n' & $nth)
   elif indentLevelDiff <= -1:
     # Each negative indentation level corresponds to the end of a node.
-    for _ in 1 .. indentLevelDiff:
+    for _ in indentLevelDiff .. -1:
       discard parents.pop()
     # Add this node to the grandparent of the previous.
     graph.addEdge(parents[^1] -> 'n' & $nth)

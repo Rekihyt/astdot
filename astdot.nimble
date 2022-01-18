@@ -1,6 +1,6 @@
 # Package
 
-version       = "1.0.0"
+version       = "1.0.1"
 author        = "Rekihyt"
 description   = "Prints a dot graph of a nim ast dumped using the `dumpTree` macro."
 license       = "MIT"
