@@ -9,10 +9,8 @@ srcDir        = "src"
 bin           = @["astdot"]
 
 
-
 # Dependencies
 
 requires "nim >= 1.2.0"
-requires "strings"
 requires "clapfn"
 requires "nimgraphviz >= 0.3.0"
